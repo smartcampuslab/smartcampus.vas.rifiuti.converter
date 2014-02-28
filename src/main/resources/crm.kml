@@ -67,7 +67,7 @@
 	<ExtendedData><SchemaData schemaUrl="#crm">
 		<SimpleData name="id">1</SimpleData>
 		<SimpleData name="TIPOLOGIA">CRM</SimpleData>
-		<SimpleData name="COMUNE">BLEGGIO SUP</SimpleData>
+		<SimpleData name="COMUNE">BLEGGIO SUPERIORE</SimpleData>
 		<SimpleData name="DESCR">CRM BLEGGIO SUPERIORE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.823417811285328,46.021145025875953</coordinates></Point>
@@ -94,7 +94,7 @@
 	<ExtendedData><SchemaData schemaUrl="#crm">
 		<SimpleData name="id">15</SimpleData>
 		<SimpleData name="TIPOLOGIA">CRM</SimpleData>
-		<SimpleData name="COMUNE">TIONE</SimpleData>
+		<SimpleData name="COMUNE">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="DESCR">CRM TIONE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.732911326953509,46.036666762973304</coordinates></Point>

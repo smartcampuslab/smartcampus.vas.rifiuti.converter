@@ -1,11 +1,14 @@
 package eu.trentorise.smartcampus.rifiuti.kml;
 
 import java.io.File;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 import org.apache.commons.lang.WordUtils;
+
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
 
 import de.micromata.opengis.kml.v_2_2_0.Data;
 import de.micromata.opengis.kml.v_2_2_0.Document;
@@ -19,8 +22,8 @@ import de.micromata.opengis.kml.v_2_2_0.SimpleData;
 
 public class KMLReader {
 
-	public static Map<String,KMLData> readIsole() {
-		Map<String, KMLData> result = new TreeMap<String, KMLData>();
+	public static Map<String,Collection<KMLData>> readIsole() {
+		Multimap<String, KMLData> multiResult = ArrayListMultimap.create(); 
 		final Kml kml = Kml.unmarshal(new File("src/main/resources/isole.kml"));
     final Document document = (Document)kml.getFeature();
     System.out.println(document.getName());
@@ -51,14 +54,14 @@ public class KMLReader {
             kd.setDescription(descr);
             kd.setLat(point.getCoordinates().get(0).getLatitude());
             kd.setLon(point.getCoordinates().get(0).getLongitude());
-            result.put(name.toLowerCase(),kd);
+            multiResult.put(name.toLowerCase(),kd);
         }
     }
-    return result;
+    return multiResult.asMap();
 	}
 	
-	public static Map<String,KMLData> readCRM() {
-		Map<String, KMLData> result = new TreeMap<String, KMLData>();
+	public static Map<String,Collection<KMLData>> readCRM() {
+		Multimap<String, KMLData> multiResult = ArrayListMultimap.create(); 
 		final Kml kml = Kml.unmarshal(new File("src/main/resources/crm.kml"));
     final Document document = (Document)kml.getFeature();
     System.out.println(document.getName());
@@ -89,10 +92,10 @@ public class KMLReader {
             kd.setDescription(descr);
             kd.setLat(point.getCoordinates().get(0).getLatitude());
             kd.setLon(point.getCoordinates().get(0).getLongitude());
-            result.put(name.toLowerCase(),kd);
+            multiResult.put(name.toLowerCase(),kd);
         }
     }
-    return result;
+    return multiResult.asMap();
 	}	
 
 }

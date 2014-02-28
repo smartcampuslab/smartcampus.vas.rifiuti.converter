@@ -13,7 +13,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.Collection;
 import java.util.GregorianCalendar;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -45,18 +47,19 @@ public class Initializer {
 	
 	Connection connection;
 	
-	Map<String, KMLData> isole;
-	Map<String, KMLData> crm;
+	Map<String, Collection<KMLData>> isole;
+	Map<String, Collection<KMLData>> crm;
 
 	public Initializer() throws Exception {
-		String[] exSheets = new String[] { "TIPOLOGIA_RIFIUTO"};
+		String[] exSheets = new String[] { "TIPOLOGIA_RIFIUTO" };
 		primaryKeys = new Properties();
 		primaryKeys.load(new FileInputStream("src/main/resources/primary_keys.txt"));
 		oneColumnAsMany = Arrays.asList(exSheets);
 		Class.forName("org.sqlite.JDBC");
-		connection = DriverManager.getConnection("jdbc:sqlite:./src/main/resources/output/rifiuti.db");		
-		isole = KMLReader.readIsole();
-		crm = KMLReader.readCRM();
+		connection = DriverManager.getConnection("jdbc:sqlite:./src/main/resources/rifiuti.db");
+		KMLReader kmlReader = new KMLReader();
+		isole = kmlReader.readIsole();
+		crm = kmlReader.readCRM();
 	}
 
 	public Rifiuti readExcel(String fileName) throws Exception {
@@ -200,7 +203,7 @@ public class Initializer {
 		Class clazz = Rifiuti.class;
 		for (Field field : clazz.getDeclaredFields()) {
 			String fieldName = field.getName();
-			
+
 			System.out.println(">" + fieldName);
 
 			Method method = Rifiuti.class.getMethod("get" + WordUtils.capitalize(fieldName), null);
@@ -226,11 +229,15 @@ public class Initializer {
 					values2.add(val);
 				}
 
-				if("puntiRaccolta".equals(fieldName)) {
-					completePuntiRaccolta(values2);
+				if ("puntiRaccolta".equals(fieldName)) {
+					List<List<String>> newValues2 = completePuntiRaccolta(values2);
+					for (List<String> nv2 : newValues2) {
+						writer.writeNext(nv2.toArray(new String[nv2.size()]));
+					}
+				} else {
+					writer.writeNext(values2.toArray(new String[values2.size()]));
 				}
-				
-				writer.writeNext(values2.toArray(new String[values2.size()]));
+
 			}
 
 			writer.close();
@@ -238,11 +245,13 @@ public class Initializer {
 		}
 		return result;
 	}
-	
-	private void completePuntiRaccolta(List<String> values) {
+
+	private List<List<String>> completePuntiRaccolta(List<String> values) {
 		String name;
-		Map<String, KMLData> kml;
+		List<List<String>> result = new ArrayList<List<String>>();
+		Map<String, Collection<KMLData>> kml;
 		boolean isCrm = false;
+		boolean hasDescription = values.get(4) == null || values.get(4).isEmpty();
 		if ("crm".equals(values.get(1).toLowerCase())) {
 			kml = crm;
 			name = values.get(4).toLowerCase();
@@ -251,18 +260,29 @@ public class Initializer {
 			kml = isole;
 			name = values.get(0).toLowerCase();
 		} else {
-			return;
+			result.add(values);
+			return result;
 		}
-		
-		if (!kml.containsKey(name)) {
-			return;
+
+		if (!kml.containsKey(name) || (!isCrm && !hasDescription)) {
+			result.add(values);
+			return result;
 		}
-		KMLData data = kml.get(name);
-		
-		values.set(3, data.getLat() + "," + data.getLon());
-		if (!isCrm) {
-			values.set(4, data.getDescription());
+
+		Collection<KMLData> data = kml.get(name);
+
+		Iterator it = data.iterator();
+		while (it.hasNext()) {
+			List<String> line = new ArrayList<String>(values);
+			KMLData next = (KMLData) it.next();
+			line.set(3, next.getLat() + "," + next.getLon());
+			if (!isCrm) {
+				line.set(4, next.getDescription());
+			}
+			result.add(line);
 		}
+
+		return result;
 	}
 	
 	public void convertFromCSVToDB() throws Exception {
@@ -282,6 +302,9 @@ public class Initializer {
 		statement.executeUpdate(insert);		
 		
 		for (File f : files) {
+			if (!f.getName().endsWith("csv")) {
+				continue;
+			}
 			String fieldName = f.getName().replace(".csv", "");
 			String className = WordUtils.capitalize(fieldName);
 			Class clazz = Class.forName("eu.trentorise.smartcampus.rifiuti.model." + className);
@@ -383,7 +406,7 @@ public class Initializer {
 		} else {
 			s = s.substring(0, s.length() - 2) + ")";
 		}
-		System.err.println(s);
+//		System.err.println(s);
 		return s;
 	}
 	
@@ -393,7 +416,7 @@ public class Initializer {
 			s += "\"" + value + "\",";
 		}
 		s = s.substring(0, s.length() - 1) + ")";
-		System.err.println(s);
+//		System.err.println(s);
 		return s;
 	}
 
