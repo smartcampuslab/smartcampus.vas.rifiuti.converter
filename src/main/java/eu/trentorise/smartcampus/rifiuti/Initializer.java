@@ -284,7 +284,11 @@ public class Initializer {
 		for (File f : files) {
 			String fieldName = f.getName().replace(".csv", "");
 			String className = WordUtils.capitalize(fieldName);
-			Class clazz = Class.forName("eu.trentorise.smartcampus.rifiuti.model." + className);
+			try {
+				Class clazz = Class.forName("eu.trentorise.smartcampus.rifiuti.model." + className);
+			} catch (Exception e) {
+				continue;
+			}
 
 			System.out.println("Converting: " + fieldName);
 			
