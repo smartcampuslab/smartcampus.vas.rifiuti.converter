@@ -264,7 +264,7 @@ public class Initializer {
 			return result;
 		}
 
-		if (!kml.containsKey(name) || (!isCrm && !hasDescription)) {
+		if (!kml.containsKey(name) || (!isCrm && hasDescription == true)) {
 			result.add(values);
 			return result;
 		}
