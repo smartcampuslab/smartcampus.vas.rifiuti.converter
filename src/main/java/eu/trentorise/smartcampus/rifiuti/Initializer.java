@@ -163,7 +163,9 @@ public class Initializer {
 			if (cal.get(Calendar.YEAR) < 2014) {
 				value = cal.get(Calendar.HOUR_OF_DAY) + ":" + (cal.get(Calendar.MINUTE) + "0").substring(0, 2);
 			} else {
-				value = cal.get(Calendar.DAY_OF_MONTH) + "/" + (1 + cal.get(Calendar.MONTH)) + "/" + cal.get(Calendar.YEAR);
+				String month = "0" + (1 + cal.get(Calendar.MONTH));
+				String day = "0" + cal.get(Calendar.DAY_OF_MONTH);
+				value = cal.get(Calendar.YEAR) + "-" + month.substring(0, 2) + "-" + day.substring(0,2);
 			}
 			return value;
 		}
