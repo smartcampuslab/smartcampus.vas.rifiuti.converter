@@ -9,14 +9,12 @@ public class Rifiuti {
 	private List<Istituzioni>istituzioni;
 	private List<Profili>profili;
 	private List<PuntiRaccolta>puntiRaccolta;
-	private List<TipologiaRifiuto> TipologiaRifiuto;
+	private List<TipologiaRifiuto> tipologiaRifiuto;
 	private List<Riciclabolario>riciclabolario;
 	private List<Raccolta>raccolta;
 	private List<TipologiaPuntiRaccolta>tipologiaPuntiRaccolta;
 	private List<TipologiaRaccolta>tipologiaRaccolta;
 	
-//	private Map<String, List<String>> singleColumns;
-
 	public List<Aree>getAree() {
 		return aree;
 	}
@@ -58,11 +56,11 @@ public class Rifiuti {
 	}
 
 	public List<TipologiaRifiuto> getTipologiaRifiuto() {
-		return TipologiaRifiuto;
+		return tipologiaRifiuto;
 	}
 
 	public void setTipologiaRifiuto(List<TipologiaRifiuto> tipologiaRifiuto) {
-		TipologiaRifiuto = tipologiaRifiuto;
+		this.tipologiaRifiuto = tipologiaRifiuto;
 	}
 
 	public List<Riciclabolario>getRiciclabolario() {
@@ -96,13 +94,5 @@ public class Rifiuti {
 	public void setTipologiaRaccolta(List<TipologiaRaccolta>tipologiaRaccolta) {
 		this.tipologiaRaccolta = tipologiaRaccolta;
 	}
-
-//	public Map<String, List<String>> getSingleColumns() {
-//		return singleColumns;
-//	}
-//
-//	public void setSingleColumns(Map<String, List<String>> singleColumns) {
-//		this.singleColumns = singleColumns;
-//	}
 
 }
