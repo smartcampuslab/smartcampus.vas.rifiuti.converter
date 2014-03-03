@@ -165,7 +165,7 @@ public class Initializer {
 			} else {
 				String month = "0" + (1 + cal.get(Calendar.MONTH));
 				String day = "0" + cal.get(Calendar.DAY_OF_MONTH);
-				value = cal.get(Calendar.YEAR) + "-" + month.substring(0, 2) + "-" + day.substring(0,2);
+				value = cal.get(Calendar.YEAR) + "-" + month.substring(month.length() - 2, month.length()) + "-" + day.substring(day.length() - 2, day.length());
 			}
 			return value;
 		}
