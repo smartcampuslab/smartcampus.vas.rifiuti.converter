@@ -51,6 +51,17 @@ public class SQLQueries {
 		return result;
 	}
 
+	public List<Aree> getAree() throws Exception {
+		List<Aree> result = new ArrayList<Aree>();
+		String query = "SELECT * FROM aree";
+		Statement statement = connection.createStatement();
+		ResultSet rs = statement.executeQuery(query);
+		while (rs.next()) {
+			result.add(bp.toBean(rs, Aree.class));
+		}
+		return result;
+	}
+
 	public String getTipoRifiuto(String nome, ProfiloUtente pu) throws Exception {
 		String aree = getAreeForQuery(pu);
 		System.out.println(aree);

@@ -139,7 +139,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">1993</SimpleData>
-		<SimpleData name="comune">CASTELCONDINO</SimpleData>
+		<SimpleData name="comune">CASTEL CONDINO</SimpleData>
 		<SimpleData name="riferiment">CASTELCONDINO PIAZZALE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.602077293967836,45.916991085272549</coordinates></Point>
@@ -859,7 +859,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">1773</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE BASSO ARNO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.732837046342599,46.035634441295528</coordinates></Point>
@@ -867,7 +867,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">1743</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE COMUNITA DELEL GIUDICARIE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.722636781923331,46.031912625448093</coordinates></Point>
@@ -875,7 +875,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">1771</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE PARCHEGGIO BIBLIOTECA</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.725472850267392,46.033132854335818</coordinates></Point>
@@ -883,7 +883,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">1750</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE PARCHEGGIO VIA PIAVE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.722877563202047,46.038963512787902</coordinates></Point>
@@ -891,7 +891,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2106</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE VIA DEI MONTI CANTES</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.722186560547911,46.034815161428753</coordinates></Point>
@@ -899,7 +899,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">1748</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE TENNIS</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.722917552996277,46.033141302192512</coordinates></Point>
@@ -907,7 +907,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">1756</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE CIRCONVALLAZIONE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.727518885819981,46.0402116601241</coordinates></Point>
@@ -915,7 +915,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">1752</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE SIVRE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.724697022883413,46.039538298701743</coordinates></Point>
@@ -923,7 +923,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">1763</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE PARCHEGGIO CHIESA</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.72890050275001,46.035065072480108</coordinates></Point>
@@ -931,7 +931,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2417</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE VIA FABIO FILZI</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.724856836509732,46.031706826986024</coordinates></Point>
@@ -939,7 +939,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2086</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE POLIN</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.721052278788186,46.026287195664551</coordinates></Point>
@@ -947,7 +947,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2088</SimpleData>
-		<SimpleData name="comune">TIONE</SimpleData>
+		<SimpleData name="comune">TIONE DI TRENTO</SimpleData>
 		<SimpleData name="riferiment">TIONE SAONE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.766313074194171,46.042455736595578</coordinates></Point>

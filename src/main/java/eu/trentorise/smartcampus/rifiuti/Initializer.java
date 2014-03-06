@@ -1,10 +1,14 @@
 package eu.trentorise.smartcampus.rifiuti;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.sql.Connection;
@@ -211,7 +215,8 @@ public class Initializer {
 			Method method = Rifiuti.class.getMethod("get" + WordUtils.capitalize(fieldName), null);
 			List values = (List) method.invoke(rifiuti, null);
 
-			CSVWriter writer = new CSVWriter(new FileWriter("src/main/resources/output/csv/" + fieldName + ".csv"), ',');
+			Writer fos = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src/main/resources/output/csv/" + fieldName + ".csv"), "UTF-8")); 
+			CSVWriter writer = new CSVWriter(fos, ',');
 
 			List<String> keys = new ArrayList<String>();
 			for (Field field2 : values.get(0).getClass().getDeclaredFields()) {

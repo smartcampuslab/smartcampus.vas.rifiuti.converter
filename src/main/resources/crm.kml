@@ -148,7 +148,7 @@
 	<ExtendedData><SchemaData schemaUrl="#crm">
 		<SimpleData name="id">17</SimpleData>
 		<SimpleData name="TIPOLOGIA">CRM</SimpleData>
-		<SimpleData name="COMUNE">CASTELCONDINO</SimpleData>
+		<SimpleData name="COMUNE">CASTEL CONDINO</SimpleData>
 		<SimpleData name="DESCR">CRM SEMPLIFICATO CASTELCONDINO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.603065425482576,45.918680542672526</coordinates></Point>

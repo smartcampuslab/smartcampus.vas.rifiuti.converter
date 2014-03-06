@@ -1,0 +1,13 @@
+kml (crm):
+Bleggio sup -> Bleggio Superiore
+Tione -> Tione di Trento
+Fiave'
+Dare'
+castelcondino -> Castel Condino
+
+kml (isole):
+Tione -> Tione di Trento
+castelcondino -> Castel Condino
+
+excel:
+castel condino vuoto
