@@ -11,3 +11,9 @@ castelcondino -> Castel Condino
 
 excel:
 castel condino vuoto
+
+0.10
+
+colori: nullo
+riciclabolario: cornici in plastica (duplicato) -> cornici in legno
+raccolta: celle nascoste (duplicate)
