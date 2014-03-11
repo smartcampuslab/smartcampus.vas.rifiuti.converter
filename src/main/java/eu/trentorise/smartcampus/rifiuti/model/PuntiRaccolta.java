@@ -8,6 +8,7 @@ public class PuntiRaccolta {
 	private String tipologiaUtenza;
 	private String localizzazione;
 	private String indirizzo;
+	private String dettaglioIndirizzo;
 	private String dataDa;
 	private String dataA;
 	private String il;
@@ -52,6 +53,14 @@ public class PuntiRaccolta {
 
 	public void setIndirizzo(String indirizzo) {
 		this.indirizzo = indirizzo;
+	}
+
+	public String getDettaglioIndirizzo() {
+		return dettaglioIndirizzo;
+	}
+
+	public void setDettaglioIndirizzo(String dettaglioIndirizzo) {
+		this.dettaglioIndirizzo = dettaglioIndirizzo;
 	}
 
 	public String getDataDa() {

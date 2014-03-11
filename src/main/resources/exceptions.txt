@@ -22,4 +22,6 @@ raccolta: celle nascoste (duplicate)
 
 colori: nullo
 raccolta: celle nascoste (duplicate)
-istituzioni: colonne nascoste 
+istituzioni: manca nome
+aree: aggiungere COMUNE	VIA	NUMERO
+puntiRaccolta: rimuovere Madonna di campiglio da isole ecologiche

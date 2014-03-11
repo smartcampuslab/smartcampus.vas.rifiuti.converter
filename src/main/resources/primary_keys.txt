@@ -1,5 +1,5 @@
 aree=nome
 gestori=ragioneSociale
-#istituzioni=nome
+istituzioni=nome,ufficio
 riciclabolario=nome,area
 #raccolta=area,tipologiaUtenza,tipologiaRifiuto,tipologiaPuntoRaccolta,tipologiaRaccolta
