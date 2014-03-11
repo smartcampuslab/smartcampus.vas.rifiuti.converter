@@ -17,3 +17,9 @@ castel condino vuoto
 colori: nullo
 riciclabolario: cornici in plastica (duplicato) -> cornici in legno
 raccolta: celle nascoste (duplicate)
+
+0.11
+
+colori: nullo
+raccolta: celle nascoste (duplicate)
+istituzioni: colonne nascoste 
