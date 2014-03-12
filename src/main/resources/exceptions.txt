@@ -4,10 +4,13 @@ Tione -> Tione di Trento
 Fiave'
 Dare'
 castelcondino -> Castel Condino
+pinzolo -> MADONNA DI CAMPIGLIO
 
 kml (isole):
 Tione -> Tione di Trento
 castelcondino -> Castel Condino
+ragole parte 2 -> MADONNA DI CAMPIGLIO
+pinzolo (refirement pinzolo campiglio) -> MADONNA DI CAMPIGLIO
 
 excel:
 castel condino vuoto
