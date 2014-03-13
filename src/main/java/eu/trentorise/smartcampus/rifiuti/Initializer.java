@@ -233,6 +233,16 @@ public class Initializer {
 				for (String key : keys) {
 					Method method2 = obj.getClass().getMethod("get" + WordUtils.capitalize(key), null);
 					String val = (String) method2.invoke(obj, null);
+					
+					if (fieldName.equalsIgnoreCase("tipologiaRaccolta") && key.equalsIgnoreCase("nome") ||
+						fieldName.equalsIgnoreCase("tipologiaRifiuto") && key.equalsIgnoreCase("valore") ||
+						fieldName.equalsIgnoreCase("riciclabolario") && key.equalsIgnoreCase("tipologiaRifiuto") ||
+						fieldName.equalsIgnoreCase("raccolta") && key.equalsIgnoreCase("tipologiaRifiuto") ||
+						fieldName.equalsIgnoreCase("raccolta") && key.equalsIgnoreCase("tipologiaRaccolta")) {
+						val = WordUtils.capitalizeFully(val,new char[]{'*'});
+						val.replace("crm", "CRM");
+					}
+					
 					values2.add(val);
 				}
 
