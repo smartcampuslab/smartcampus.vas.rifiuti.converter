@@ -240,7 +240,7 @@ public class Initializer {
 						fieldName.equalsIgnoreCase("raccolta") && key.equalsIgnoreCase("tipologiaRifiuto") ||
 						fieldName.equalsIgnoreCase("raccolta") && key.equalsIgnoreCase("tipologiaRaccolta")) {
 						val = WordUtils.capitalizeFully(val,new char[]{'*'});
-						val.replace("crm", "CRM");
+						val = val.replace("crm", "CRM");
 					}
 					
 					values2.add(val);
