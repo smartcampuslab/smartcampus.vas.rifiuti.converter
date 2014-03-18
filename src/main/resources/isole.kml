@@ -1651,56 +1651,56 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2263</SimpleData>
-		<SimpleData name="comune">PINZOLO</SimpleData>
-		<SimpleData name="riferiment">PINZOLO CAMPIGLIO VIA ZELEDRIA</SimpleData>
+		<SimpleData name="comune">MADONNA DI CAMPIGLIO</SimpleData>
+		<SimpleData name="riferiment">MADONNA DI CAMPIGLIO VIA ZELEDRIA</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.838933473207145,46.24316464153771</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2282</SimpleData>
-		<SimpleData name="comune">PINZOLO</SimpleData>
-		<SimpleData name="riferiment">PINZOLO CAMPIGLIO PATASCOSS</SimpleData>
+		<SimpleData name="comune">MADONNA DI CAMPIGLIO</SimpleData>
+		<SimpleData name="riferiment">MADONNA DI CAMPIGLIO PATASCOSS</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.815857375336673,46.23073314050059</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2281</SimpleData>
-		<SimpleData name="comune">PINZOLO</SimpleData>
-		<SimpleData name="riferiment">PINZOLO CAMPIGLIO VIA NAMBINO</SimpleData>
+		<SimpleData name="comune">MADONNA DI CAMPIGLIO</SimpleData>
+		<SimpleData name="riferiment">MADONNA DI CAMPIGLIO VIA NAMBINO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.819502935853471,46.237470182191323</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2517</SimpleData>
-		<SimpleData name="comune">PINZOLO</SimpleData>
-		<SimpleData name="riferiment">PINZOLO CAMPIGLIO LE VILLE</SimpleData>
+		<SimpleData name="comune">MADONNA DI CAMPIGLIO</SimpleData>
+		<SimpleData name="riferiment">MADONNA DI CAMPIGLIO LE VILLE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.827600370851513,46.234339934648496</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2357</SimpleData>
-		<SimpleData name="comune">PINZOLO</SimpleData>
-		<SimpleData name="riferiment">PINZOLO CAMPIGLIO VIA ADAMELLO</SimpleData>
+		<SimpleData name="comune">MADONNA DI CAMPIGLIO</SimpleData>
+		<SimpleData name="riferiment">MADONNA DI CAMPIGLIO VIA ADAMELLO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.823667055285663,46.224760584595217</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2347</SimpleData>
-		<SimpleData name="comune">PINZOLO</SimpleData>
-		<SimpleData name="riferiment">PINZOLO CAMPIGLIO PARCHEGGIO SCUOLA MATERNA</SimpleData>
+		<SimpleData name="comune">MADONNA DI CAMPIGLIO</SimpleData>
+		<SimpleData name="riferiment">MADONNA DI CAMPIGLIO PARCHEGGIO SCUOLA MATERNA</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.824882098547691,46.224915164327129</coordinates></Point>
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2290</SimpleData>
-		<SimpleData name="comune">PINZOLO</SimpleData>
-		<SimpleData name="riferiment">PINZOLO CAMPIGLIO VIA PANORAMA</SimpleData>
+		<SimpleData name="comune">MADONNA DI CAMPIGLIO</SimpleData>
+		<SimpleData name="riferiment">MADONNA DI CAMPIGLIO VIA PANORAMA</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.820706651638366,46.21307789699906</coordinates></Point>
   </Placemark>
