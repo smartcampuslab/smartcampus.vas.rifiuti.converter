@@ -180,7 +180,7 @@
 	<ExtendedData><SchemaData schemaUrl="#isole">
 		<SimpleData name="POD">2209</SimpleData>
 		<SimpleData name="comune">CARISOLO</SimpleData>
-		<SimpleData name="riferiment">CARISLO VIA DANTE</SimpleData>
+		<SimpleData name="riferiment">CARISOLO VIA DANTE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.758919206451916,46.169273754037732</coordinates></Point>
   </Placemark>
