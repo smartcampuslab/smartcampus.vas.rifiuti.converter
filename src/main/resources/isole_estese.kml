@@ -343,7 +343,7 @@
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2209</SimpleData>
 		<SimpleData name="comune">CARISOLO</SimpleData>
-		<SimpleData name="riferiment">CARISLO VIA DANTE</SimpleData>
+		<SimpleData name="riferiment">CARISOLO VIA DANTE</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
 		<SimpleData name="IMB_CARTA">TRUE</SimpleData>
