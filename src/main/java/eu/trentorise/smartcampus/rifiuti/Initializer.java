@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
@@ -19,6 +18,7 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.GregorianCalendar;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -36,10 +36,6 @@ import org.codehaus.jackson.map.ObjectMapper;
 
 import au.com.bytecode.opencsv.CSVReader;
 import au.com.bytecode.opencsv.CSVWriter;
-
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Multimap;
-
 import eu.trentorise.smartcampus.rifiuti.kml.KMLData;
 import eu.trentorise.smartcampus.rifiuti.kml.KMLReader;
 import eu.trentorise.smartcampus.rifiuti.model.Rifiuti;
@@ -61,9 +57,8 @@ public class Initializer {
 		oneColumnAsMany = Arrays.asList(exSheets);
 		Class.forName("org.sqlite.JDBC");
 		connection = DriverManager.getConnection("jdbc:sqlite:./src/main/resources/rifiuti.db");
-		KMLReader kmlReader = new KMLReader();
-		isole = kmlReader.readIsole();
-		crm = kmlReader.readCRM();
+		isole = KMLReader.readIsole();
+		crm = KMLReader.readCRM();
 	}
 
 	public Rifiuti readExcel(String fileName) throws Exception {
@@ -76,7 +71,7 @@ public class Initializer {
 
 		Rifiuti rifiuti = new Rifiuti();
 
-		Map<String, List<String>> singleColumn = new TreeMap<String, List<String>>();
+//		Map<String, List<String>> singleColumn = new TreeMap<String, List<String>>();
 		for (int i = 0; i < wb.getNumberOfSheets(); i++) {
 			Sheet sheet = wb.getSheetAt(i);
 			System.out.println(sheet.getSheetName());
@@ -91,22 +86,22 @@ public class Initializer {
 		return rifiuti;
 	}
 
-	private void getSheetList(Sheet sheet, Map<String, List<String>> map) {
-		Row row = null;
-		List<String> values = new ArrayList<String>();
-		for (int i = 0; i <= sheet.getLastRowNum(); i++) {
-			row = sheet.getRow(i);
-			if (row == null) {
-				continue;
-			}
-			String value = row.getCell(0).toString().replace("_", " ").trim();
-			if (!value.isEmpty()) {
-				values.add(value);
-			}
-		}
-
-		map.put(sheet.getSheetName().trim(), values);
-	}
+//	private void getSheetList(Sheet sheet, Map<String, List<String>> map) {
+//		Row row = null;
+//		List<String> values = new ArrayList<String>();
+//		for (int i = 0; i <= sheet.getLastRowNum(); i++) {
+//			row = sheet.getRow(i);
+//			if (row == null) {
+//				continue;
+//			}
+//			String value = row.getCell(0).toString().replace("_", " ").trim();
+//			if (!value.isEmpty()) {
+//				values.add(value);
+//			}
+//		}
+//
+//		map.put(sheet.getSheetName().trim(), values);
+//	}
 
 	private List<Map<String, String>> getSheetMap(Sheet sheet) {
 		Row row = sheet.getRow(0);
@@ -180,7 +175,7 @@ public class Initializer {
 		String className = "eu.trentorise.smartcampus.rifiuti.model." + WordUtils.capitalizeFully(sheetName.replace(' ', '_'), new char[] { '_' }).replace("_", "").trim();
 		String field = WordUtils.capitalizeFully(" " + sheetName.replace(' ', '_'), new char[] { '_' }).replace("_", "").trim();
 
-		Class clazz = null;
+		Class<?> clazz = null;
 		try {
 			clazz = Class.forName(className);
 		} catch (ClassNotFoundException e) {
@@ -191,7 +186,7 @@ public class Initializer {
 		ObjectMapper mapper = new ObjectMapper();
 		List<Object> fields = new ArrayList<Object>();
 
-		Multimap<String, Object> fieldsMap = ArrayListMultimap.create();
+//		Multimap<String, Object> fieldsMap = ArrayListMultimap.create();
 
 		for (Map<String, String> map : data) {
 			Object o = mapper.convertValue(map, clazz);
@@ -206,14 +201,14 @@ public class Initializer {
 
 	public List<String> writeCSV(Rifiuti rifiuti) throws Exception {
 		List<String> result = new ArrayList<String>();
-		Class clazz = Rifiuti.class;
+		Class<?> clazz = Rifiuti.class;
 		for (Field field : clazz.getDeclaredFields()) {
 			String fieldName = field.getName();
 
 			System.out.println(">" + fieldName);
 
-			Method method = Rifiuti.class.getMethod("get" + WordUtils.capitalize(fieldName), null);
-			List values = (List) method.invoke(rifiuti, null);
+			Method method = Rifiuti.class.getMethod("get" + WordUtils.capitalize(fieldName));
+			List<?> values = (List<?>) method.invoke(rifiuti);
 
 			Writer fos = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("src/main/resources/output/csv/" + fieldName + ".csv"), "UTF-8")); 
 			CSVWriter writer = new CSVWriter(fos, ',');
@@ -231,8 +226,8 @@ public class Initializer {
 			for (Object obj : values) {
 				List<String> values2 = new ArrayList<String>();
 				for (String key : keys) {
-					Method method2 = obj.getClass().getMethod("get" + WordUtils.capitalize(key), null);
-					String val = (String) method2.invoke(obj, null);
+					Method method2 = obj.getClass().getMethod("get" + WordUtils.capitalize(key));
+					String val = (String) method2.invoke(obj);
 					
 					if (fieldName.equalsIgnoreCase("tipologiaRaccolta") && key.equalsIgnoreCase("nome") ||
 						fieldName.equalsIgnoreCase("tipologiaRifiuto") && key.equalsIgnoreCase("valore") ||
@@ -275,26 +270,41 @@ public class Initializer {
 			isCrm = true;
 		} else if ("isola ecologica".equals(values.get(1).toLowerCase())) {
 			kml = isole;
-			name = values.get(0).toLowerCase();
+			if (values.get(4)==null || values.get(4).isEmpty()) {
+				name = "";
+//				name = values.get(0).toLowerCase();
+//				values.set(4, values.get(0));
+			} else {
+				name = values.get(4).toLowerCase();
+			}
 		} else {
 			result.add(values);
 			return result;
 		}
 
-		if (!kml.containsKey(name) || (isCrm && hasDescription == true)) {
+		if (!name.isEmpty() && (!kml.containsKey(name) || (isCrm && hasDescription == true))) {
 			result.add(values);
 			return result;
 		}
 
 		Collection<KMLData> data = kml.get(name);
+		if (name.isEmpty()) {
+			data = new HashSet<KMLData>();
+			for (Collection<KMLData> colls : kml.values()) {
+				data.addAll(colls);
+			}
+		}
 
-		Iterator it = data.iterator();
+		Iterator<KMLData> it = data.iterator();
 		while (it.hasNext()) {
 			List<String> line = new ArrayList<String>(values);
 			KMLData next = (KMLData) it.next();
 			line.set(3, next.getLat() + "," + next.getLon());
-			if (!isCrm) {
-				line.set(4, next.getDescription());
+			if (name.isEmpty()) line.set(4, next.getName());
+			if (next.getAttributes() != null) {
+				for (Integer key : next.getAttributes().keySet()) {
+					line.set(key, next.getAttributes().get(key));
+				}
 			}
 			result.add(line);
 		}
@@ -304,7 +314,7 @@ public class Initializer {
 	
 	public void convertFromCSVToDB() throws Exception {
 		File[] files = new File("src/main/resources/output/csv/").listFiles();
-		Rifiuti rifiuti = new Rifiuti();
+//		Rifiuti rifiuti = new Rifiuti();
 
 		Statement statement = connection.createStatement();
 		statement.setQueryTimeout(30);		
@@ -323,8 +333,8 @@ public class Initializer {
 				continue;
 			}
 			String fieldName = f.getName().replace(".csv", "");
-			String className = WordUtils.capitalize(fieldName);
-			Class clazz = Class.forName("eu.trentorise.smartcampus.rifiuti.model." + className);
+//			String className = WordUtils.capitalize(fieldName);
+//			Class clazz = Class.forName("eu.trentorise.smartcampus.rifiuti.model." + className);
 
 			System.out.println("Converting: " + fieldName);
 			
@@ -338,7 +348,7 @@ public class Initializer {
 			
 			boolean first = true;
 			String[] keys = null;
-			List objs = new ArrayList();
+//			List objs = new ArrayList();
 			for (String[] line : lines) {
 				if (first) {
 					keys = line;
@@ -360,54 +370,54 @@ public class Initializer {
 
 	}
 	
-	private void initDB(Rifiuti rifiuti) throws Exception {
-		List<String> result = new ArrayList<String>();
-		Class clazz = Rifiuti.class;
-		Statement statement = connection.createStatement();
-		statement.setQueryTimeout(30);		
-		
-		String create = "CREATE TABLE \"android_metadata\" (\"locale\" TEXT DEFAULT 'en_US')";
-		statement.executeUpdate("DROP TABLE IF EXISTS \"android_metadata\"");
-		System.err.println(create);
-		statement.executeUpdate(create);		
-		
-		String insert = "INSERT INTO \"android_metadata\" VALUES ('en_US')";
-		System.err.println(insert);
-		statement.executeUpdate(insert);		
-		
-		for (Field field : clazz.getDeclaredFields()) {
-			String fieldName = field.getName();
-
-			Method method = Rifiuti.class.getMethod("get" + WordUtils.capitalize(fieldName), null);
-			List values = (List) method.invoke(rifiuti, null);
-
-			List<String> keys = new ArrayList<String>();
-			for (Field field2 : values.get(0).getClass().getDeclaredFields()) {
-				keys.add(field2.getName());
-			}		
-			
-			create = "CREATE TABLE \"android_metadata\" (\"locale\" TEXT DEFAULT 'en_US')";
-			
-			
-			create = buildSQLCreate(fieldName, keys);
-			
-			statement.executeUpdate("DROP TABLE IF EXISTS " + fieldName);
-			System.err.println(create);
-			statement.executeUpdate(create);
-			
-			for (Object obj : values) {
-				List<String> values2 = new ArrayList<String>();
-				for (String key : keys) {
-					Method method2 = obj.getClass().getMethod("get" + WordUtils.capitalize(key), null);
-					String val = (String) method2.invoke(obj, null);
-					values2.add(val);
-				}
-				insert = buildSQLInsert(fieldName, values2);
-				System.err.println(insert);
-				statement.executeUpdate(insert);
-			}
-			}			
-	}
+//	private void initDB(Rifiuti rifiuti) throws Exception {
+//		List<String> result = new ArrayList<String>();
+//		Class clazz = Rifiuti.class;
+//		Statement statement = connection.createStatement();
+//		statement.setQueryTimeout(30);		
+//		
+//		String create = "CREATE TABLE \"android_metadata\" (\"locale\" TEXT DEFAULT 'en_US')";
+//		statement.executeUpdate("DROP TABLE IF EXISTS \"android_metadata\"");
+//		System.err.println(create);
+//		statement.executeUpdate(create);		
+//		
+//		String insert = "INSERT INTO \"android_metadata\" VALUES ('en_US')";
+//		System.err.println(insert);
+//		statement.executeUpdate(insert);		
+//		
+//		for (Field field : clazz.getDeclaredFields()) {
+//			String fieldName = field.getName();
+//
+//			Method method = Rifiuti.class.getMethod("get" + WordUtils.capitalize(fieldName), null);
+//			List values = (List) method.invoke(rifiuti, null);
+//
+//			List<String> keys = new ArrayList<String>();
+//			for (Field field2 : values.get(0).getClass().getDeclaredFields()) {
+//				keys.add(field2.getName());
+//			}		
+//			
+//			create = "CREATE TABLE \"android_metadata\" (\"locale\" TEXT DEFAULT 'en_US')";
+//			
+//			
+//			create = buildSQLCreate(fieldName, keys);
+//			
+//			statement.executeUpdate("DROP TABLE IF EXISTS " + fieldName);
+//			System.err.println(create);
+//			statement.executeUpdate(create);
+//			
+//			for (Object obj : values) {
+//				List<String> values2 = new ArrayList<String>();
+//				for (String key : keys) {
+//					Method method2 = obj.getClass().getMethod("get" + WordUtils.capitalize(key), null);
+//					String val = (String) method2.invoke(obj, null);
+//					values2.add(val);
+//				}
+//				insert = buildSQLInsert(fieldName, values2);
+//				System.err.println(insert);
+//				statement.executeUpdate(insert);
+//			}
+//			}			
+//	}
 
 	private String buildSQLCreate(String tableName, List<String> keys) {
 		String pKeys = null;
@@ -444,7 +454,7 @@ public class Initializer {
 		for (File f : files) {
 			String fieldName = f.getName().replace(".csv", "");
 			String className = WordUtils.capitalize(fieldName);
-			Class clazz = Class.forName("eu.trentorise.smartcampus.rifiuti.model." + className);
+			Class<?> clazz = Class.forName("eu.trentorise.smartcampus.rifiuti.model." + className);
 
 			CSVReader reader = new CSVReader(new FileReader(f));
 
@@ -454,9 +464,9 @@ public class Initializer {
 
 			boolean first = true;
 			String[] keys = null;
-			List objs = new ArrayList();
+			List<Object> objs = new ArrayList<Object>();
 			for (String[] line : lines) {
-				String[] values;
+//				String[] values;
 				if (first) {
 					keys = line;
 					first = false;

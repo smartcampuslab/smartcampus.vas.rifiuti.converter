@@ -10,8 +10,13 @@ public class Aree {
 	private String gestore;
 	private String descrizione;
 	private String comune;
+	private String localita;
 	private String via;
 	private String numero;
+	
+	private String utenzaDomestica;
+	private String utenzaNonDomestica;
+	private String utenzaOccasionale;
 	
 	public String getIstituzione() {
 		return istituzione;
@@ -77,4 +82,36 @@ public class Aree {
 		this.numero = numero;
 	}
 
+	public String getLocalita() {
+		return localita;
+	}
+
+	public void setLocalita(String localita) {
+		this.localita = localita;
+	}
+
+	public String getUtenzaDomestica() {
+		return utenzaDomestica;
+	}
+
+	public void setUtenzaDomestica(String utenzaDomestica) {
+		this.utenzaDomestica = utenzaDomestica;
+	}
+
+	public String getUtenzaNonDomestica() {
+		return utenzaNonDomestica;
+	}
+
+	public void setUtenzaNonDomestica(String utenzaNonDomestica) {
+		this.utenzaNonDomestica = utenzaNonDomestica;
+	}
+
+	public String getUtenzaOccasionale() {
+		return utenzaOccasionale;
+	}
+
+	public void setUtenzaOccasionale(String utenzaOccasionale) {
+		this.utenzaOccasionale = utenzaOccasionale;
+	}
+	
 }

@@ -1,23 +1,21 @@
 package eu.trentorise.smartcampus.rifiuti.kml;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class KMLData {
 
 	private String name;
-	private String description;
 	private double lat;
 	private double lon;
+	
+	private Map<Integer,String> attributes = new HashMap<Integer, String>();
 	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
 	}
 	public double getLat() {
 		return lat;
@@ -31,7 +29,11 @@ public class KMLData {
 	public void setLon(double lon) {
 		this.lon = lon;
 	}
-	
-	
+	public Map<Integer, String> getAttributes() {
+		return attributes;
+	}
+	public void setAttributes(Map<Integer, String> attributes) {
+		this.attributes = attributes;
+	}
 
 }

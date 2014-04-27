@@ -3,6 +3,7 @@ package eu.trentorise.smartcampus.rifiuti;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -189,6 +190,17 @@ public class SQLQueries {
 		}
 		aree = aree.substring(0, aree.length() - 1) + ")";
 		return aree;
+	}
+
+	/**
+	 * @param string
+	 * @throws SQLException 
+	 */
+	public void exec(String string) throws SQLException {
+		Statement statement = connection.createStatement();
+		ResultSet rs = statement.executeQuery(string);
+		List<PuntiRaccolta> result = bp.toBeanList(rs, PuntiRaccolta.class);
+		System.err.println(result);
 	}
 	
 }
