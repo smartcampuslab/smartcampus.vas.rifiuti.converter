@@ -1,9 +1,6 @@
 package eu.trentorise.smartcampus.rifiuti;
 
-import java.util.List;
-
 import eu.trentorise.smartcampus.rifiuti.model.ProfiloUtente;
-import eu.trentorise.smartcampus.rifiuti.model.PuntiRaccolta;
 import eu.trentorise.smartcampus.rifiuti.model.Rifiuti;
 
 public class Main {
@@ -12,7 +9,7 @@ public class Main {
 
 		Initializer initializer = new Initializer();
 
-		Rifiuti rifiuti = initializer.readExcel("ExcelModelloConcettuale_V0.18.xls");
+		Rifiuti rifiuti = initializer.readExcel("ExcelModelloConcettuale_V0.20.xls");
 		initializer.writeCSV(rifiuti);
 		initializer.convertFromCSVToDB();
 		
