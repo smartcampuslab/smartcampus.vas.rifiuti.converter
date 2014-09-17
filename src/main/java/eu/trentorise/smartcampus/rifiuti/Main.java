@@ -9,7 +9,7 @@ public class Main {
 
 		Initializer initializer = new Initializer();
 
-		Rifiuti rifiuti = initializer.readExcel("ExcelModelloConcettuale_V0.20.xls");
+		Rifiuti rifiuti = initializer.readExcel("ExcelModelloConcettuale_V0.21.xls");
 		initializer.writeCSV(rifiuti);
 		initializer.convertFromCSVToDB();
 		
