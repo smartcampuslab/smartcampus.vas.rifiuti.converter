@@ -236,6 +236,8 @@ public class Initializer {
 						fieldName.equalsIgnoreCase("raccolta") && key.equalsIgnoreCase("tipologiaRaccolta")) {
 						val = WordUtils.capitalizeFully(val,new char[]{'*'});
 						val = val.replace("crm", "CRM");
+					} if (fieldName.equalsIgnoreCase("profili") && key.equalsIgnoreCase("profilo")) {
+						val = WordUtils.capitalizeFully(val,new char[]{'*'});
 					}
 					
 					values2.add(val);
