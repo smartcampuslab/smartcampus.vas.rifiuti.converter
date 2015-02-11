@@ -139,7 +139,7 @@
 	<ExtendedData><SchemaData schemaUrl="#crm">
 		<SimpleData name="id">8</SimpleData>
 		<SimpleData name="TIPOLOGIA">CRM</SimpleData>
-		<SimpleData name="COMUNE">MADONNA DI CAMPIGLIO</SimpleData>
+		<SimpleData name="COMUNE">PINZOLO</SimpleData>
 		<SimpleData name="DESCR">CRM PINZOLO CAMPIGLIO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.813687648118488,46.205557050759872</coordinates></Point>

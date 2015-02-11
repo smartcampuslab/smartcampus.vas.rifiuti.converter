@@ -732,7 +732,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2025</SimpleData>
-		<SimpleData name="comune">BERSONE</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">BERSONE Fraz FORMINO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -747,7 +747,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2022</SimpleData>
-		<SimpleData name="comune">BERSONE</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">BERSONE C/O EX SCUOLE</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -763,7 +763,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2040</SimpleData>
-		<SimpleData name="comune">DAONE</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">DAONE SCUOLA MATERNA</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -778,7 +778,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2067</SimpleData>
-		<SimpleData name="comune">DAONE</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">DAONE VIA DE BIASI</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -793,7 +793,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2043</SimpleData>
-		<SimpleData name="comune">DAONE</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">VALLE DI DAONE VERMONGOI</SimpleData>
 		<SimpleData name="GETTONIERA">TRUE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -809,7 +809,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2039</SimpleData>
-		<SimpleData name="comune">DAONE</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">DAONE DIREZIONE BERSONE</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -824,7 +824,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2415</SimpleData>
-		<SimpleData name="comune">DAONE</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">DAONE INCROCIO MORANDINO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -840,7 +840,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2038</SimpleData>
-		<SimpleData name="comune">DAONE</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">DAONE CHIESA</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1226,7 +1226,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1852</SimpleData>
-		<SimpleData name="comune">DORSINO</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">DORSINO ANDOGNO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1241,7 +1241,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1854</SimpleData>
-		<SimpleData name="comune">DORSINO</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">DORSINO TAVODO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1256,7 +1256,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1855</SimpleData>
-		<SimpleData name="comune">DORSINO</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">DORSINO PIAZZA MUNICIPIO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1365,7 +1365,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2030</SimpleData>
-		<SimpleData name="comune">PRASO</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">PRASO SEVROR</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1380,7 +1380,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2031</SimpleData>
-		<SimpleData name="comune">PRASO</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">PRASO VIA PRATI</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1395,7 +1395,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2502</SimpleData>
-		<SimpleData name="comune">PRASO</SimpleData>
+		<SimpleData name="comune">VALDAONE</SimpleData>
 		<SimpleData name="riferiment">PRASO CIMITERO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1505,7 +1505,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2015</SimpleData>
-		<SimpleData name="comune">PIEVE DI BONO</SimpleData>
+		<SimpleData name="comune">PIEVE DI BONO - PREZZO</SimpleData>
 		<SimpleData name="riferiment">PIEVE DI BONO POR</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1521,7 +1521,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2002</SimpleData>
-		<SimpleData name="comune">PIEVE DI BONO</SimpleData>
+		<SimpleData name="comune">PIEVE DI BONO - PREZZO</SimpleData>
 		<SimpleData name="riferiment">PIEVE DI BONO COLOGNA</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1537,7 +1537,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2017</SimpleData>
-		<SimpleData name="comune">PIEVE DI BONO</SimpleData>
+		<SimpleData name="comune">PIEVE DI BONO - PREZZO</SimpleData>
 		<SimpleData name="riferiment">PIEVE DI BONO AGRONE FRUGONE</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1552,7 +1552,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2421</SimpleData>
-		<SimpleData name="comune">PIEVE DI BONO</SimpleData>
+		<SimpleData name="comune">PIEVE DI BONO - PREZZO</SimpleData>
 		<SimpleData name="riferiment">PIEVE DI BONO PROSNAVALLE</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1567,7 +1567,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1999</SimpleData>
-		<SimpleData name="comune">PREZZO</SimpleData>
+		<SimpleData name="comune">PIEVE DI BONO - PREZZO</SimpleData>
 		<SimpleData name="riferiment">PREZZO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1819,7 +1819,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1864</SimpleData>
-		<SimpleData name="comune">SAN LORENZO BANALE</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">SAN LORENZO BANALE CHIESA SAN MATTEO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1834,7 +1834,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1865</SimpleData>
-		<SimpleData name="comune">SAN LORENZO BANALE</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">SAN LORENZO BANALE SENASO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">FALSE</SimpleData>
@@ -1849,7 +1849,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1861</SimpleData>
-		<SimpleData name="comune">SAN LORENZO BANALE</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">SAN LORENZO BANALE DOLASO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1864,7 +1864,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1863</SimpleData>
-		<SimpleData name="comune">SAN LORENZO BANALE</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">SAN LORENZO BANALE COOPERATIVA</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1878,24 +1878,8 @@
   </Placemark>
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
-		<SimpleData name="POD">1867</SimpleData>
-		<SimpleData name="comune">SAN LORENZO BANALE</SimpleData>
-		<SimpleData name="riferiment">SAN LORENZO BANALE GLOLO</SimpleData>
-		<SimpleData name="GETTONIERA">FALSE</SimpleData>
-		<SimpleData name="RESIDUO">TRUE</SimpleData>
-		<SimpleData name="IMB_CARTA">TRUE</SimpleData>
-		<SimpleData name="IMB_PL_MET">TRUE</SimpleData>
-		<SimpleData name="ORGANICO">TRUE</SimpleData>
-		<SimpleData name="IMB_VETRO">TRUE</SimpleData>
-		<SimpleData name="INDUMENTI">FALSE</SimpleData>
-		<SimpleData name="NOTE">In questa isola trovi la raccolta separata del cartone con apposito gazebo</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>10.911258672066756,46.07485698917246</coordinates></Point>
-  </Placemark>
-  <Placemark>
-	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1859</SimpleData>
-		<SimpleData name="comune">SAN LORENZO BANALE</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">SAN LORENZO BANALE TORNANTE APT</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1910,7 +1894,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1869</SimpleData>
-		<SimpleData name="comune">SAN LORENZO BANALE</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">SAN LORENZO BANALE NEMBIA</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1925,7 +1909,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2265</SimpleData>
-		<SimpleData name="comune">SAN LORENZO BANALE</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">SAN LORENZO BANALE MOLINE</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1940,7 +1924,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1866</SimpleData>
-		<SimpleData name="comune">SAN LORENZO BANALE</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">SAN LORENZO BANALE CASTELMANI</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -1955,7 +1939,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">1868</SimpleData>
-		<SimpleData name="comune">SAN LORENZO BANALE</SimpleData>
+		<SimpleData name="comune">SAN LORENZO - DORSINO</SimpleData>
 		<SimpleData name="riferiment">SAN LORENZO BANALE BERGHI</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -2419,7 +2403,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2014</SimpleData>
-		<SimpleData name="comune">PIEVE DI BONO</SimpleData>
+		<SimpleData name="comune">PIEVE DI BONO - PREZZO</SimpleData>
 		<SimpleData name="riferiment">PIEVE DI BONO STRADA DIETRO RSA</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -2434,7 +2418,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2005</SimpleData>
-		<SimpleData name="comune">PIEVE DI BONO</SimpleData>
+		<SimpleData name="comune">PIEVE DI BONO - PREZZO</SimpleData>
 		<SimpleData name="riferiment">PIEVE DI BONO CENTRO PROTEZIONE CIVILE</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -2450,7 +2434,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2004</SimpleData>
-		<SimpleData name="comune">PIEVE DI BONO</SimpleData>
+		<SimpleData name="comune">PIEVE DI BONO - PREZZO</SimpleData>
 		<SimpleData name="riferiment">PIEVE DI BONO PESA PUBBLICA</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -2466,7 +2450,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2008</SimpleData>
-		<SimpleData name="comune">PIEVE DI BONO</SimpleData>
+		<SimpleData name="comune">PIEVE DI BONO - PREZZO</SimpleData>
 		<SimpleData name="riferiment">PIEVE DI BONO POLO SCOLASTICO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -2481,7 +2465,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2011</SimpleData>
-		<SimpleData name="comune">PIEVE DI BONO</SimpleData>
+		<SimpleData name="comune">PIEVE DI BONO - PREZZO</SimpleData>
 		<SimpleData name="riferiment">PIEVE DI BONO CAMPO SPORTIVO</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -3248,4 +3232,20 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>10.820706651638366,46.21307789699906</coordinates></Point>
   </Placemark>
-</Folder></Document></kml>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
+		<SimpleData name="POD">1111</SimpleData>
+		<SimpleData name="comune">BONDONE</SimpleData>
+		<SimpleData name="riferiment">BONDONE CASA SOCIALE</SimpleData>
+		<SimpleData name="GETTONIERA">FALSE</SimpleData>
+		<SimpleData name="RESIDUO">TRUE</SimpleData>
+		<SimpleData name="IMB_CARTA">TRUE</SimpleData>
+		<SimpleData name="IMB_PL_MET">TRUE</SimpleData>
+		<SimpleData name="ORGANICO">TRUE</SimpleData>
+		<SimpleData name="IMB_VETRO">TRUE</SimpleData>
+		<SimpleData name="INDUMENTI">FALSE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>10.540645729142662,45.808002286034757</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
