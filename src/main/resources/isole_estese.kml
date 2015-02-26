@@ -2867,7 +2867,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2436</SimpleData>
-		<SimpleData name="comune">RAGOLI PARTE 2</SimpleData>
+		<SimpleData name="comune">RAGOLI</SimpleData>
 		<SimpleData name="riferiment">RAGOLI PARTE 2 CAMPIGLIO VALLESINELLA</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
@@ -2883,7 +2883,7 @@
   <Placemark>
 	<ExtendedData><SchemaData schemaUrl="#isole_C8_utf_info_estese">
 		<SimpleData name="POD">2323</SimpleData>
-		<SimpleData name="comune">RAGOLI PARTE 2</SimpleData>
+		<SimpleData name="comune">RAGOLI</SimpleData>
 		<SimpleData name="riferiment">RAGOLI PARTE 2 CAMPIGLIO VIA MANDRON</SimpleData>
 		<SimpleData name="GETTONIERA">FALSE</SimpleData>
 		<SimpleData name="RESIDUO">TRUE</SimpleData>
